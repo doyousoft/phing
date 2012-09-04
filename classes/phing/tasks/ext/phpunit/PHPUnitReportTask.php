@@ -221,15 +221,6 @@ class PHPUnitReportTask extends Task
         }
     }
     
-    /**
-     * Initialize the task
-     */
-    public function init()
-    {
-        if (!class_exists('XSLTProcessor')) {
-            throw new BuildException("PHPUnitReportTask requires the XSL extension");
-        }
-    }
 
     /**
      * The main entry point
